@@ -394,4 +394,18 @@ main {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 /*# sourceMappingURL=main.css.map */
