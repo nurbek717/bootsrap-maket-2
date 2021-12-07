@@ -26,7 +26,7 @@ var movies = [
     "ytid": "jwD04NsnLLg"
   },
   {
-    "Title": " Snowed in at the House  Mouse",
+    "Title": "Snowed in at the House  Mouse",
     "fulltitle": "Mickey's Magical Christmas: Snowed in at the House of Mouse (2001)",
     "movie_year": 2001,
     "Categories": "Adventure|Animation|Comedy|Family|Fantasy",
@@ -39,7 +39,7 @@ var movies = [
     "ytid": "uCKwHHftrU4"
   },
   {
-    "Title": "Mickey's House of Villains House of Villains ",
+    "Title": "Mickey's House  ",
     "fulltitle": "Mickey's House of Villains (2001)",
     "movie_year": 2001,
     "Categories": "Animation|Comedy|Family|Fantasy|Horror",

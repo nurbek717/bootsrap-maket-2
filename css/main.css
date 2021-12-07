@@ -376,6 +376,12 @@ main {
           flex-grow: 1;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -385,6 +391,14 @@ main {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.container {
+  max-width: 1155px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .item {
