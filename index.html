@@ -16,11 +16,11 @@
     <div class="row align-items-start">
       <div class="col right">
         <form id="form" action="" method="GET">
-
+          
           <input id="inputname" type="text" class="form-control input-group mb-3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
           
           <input id="inputReting" type="number" class="form-control mb-3" name="rating" type="number" step="0.5" min="0" max="10" placeholder="Reting" aria-label="Username" aria-describedby="basic-addon1">
-         
+          
           <select id="input-select-reting" class="form-select mb-3" aria-label="Default select example">
             <option  value="All">All</option> 
           </select>    
@@ -35,19 +35,19 @@
         
         
         <h2 class="mb-5 mt-4" style="font-weight: bold;">BookMarked movies</h2>
-        <ul class="item">
-          <li class="list p-3 border">
+        <ul class="item" id="bookmark-ul">
+          <li class="list-group-item p-3 border  bg-secondary " >
+            <p class="fw-bold fs-5  text-light" id="button-text " style="font-family: cursive;">Saqlab quyish uchun kinoni tanlang <span class="text-dark">"Bookmark"</span> tugmasini bosing</p>
+            <button type="button" class="btn btn-danger " id="button-danger">Danger</button>
+          </li>
+          <!-- <li class="list p-3 border">
             <p class="fw-bold">Avangers:Inifnity War</p>
             <button type="button" class="btn btn-danger ">Danger</button>
           </li>
           <li class="list p-3 border">
             <p class="fw-bold">Avangers:Inifnity War</p>
             <button type="button" class="btn btn-danger ">Danger</button>
-          </li>
-          <li class="list p-3 border">
-            <p class="fw-bold">Avangers:Inifnity War</p>
-            <button type="button" class="btn btn-danger ">Danger</button>
-          </li>
+          </li> -->
         </ul>
       </div>
       
@@ -57,8 +57,10 @@
         <div class="p-3 mb-2   bg-info text-dark "  style="width: 660px;">Use the form on the left to  search  for a movie
         </div>
         
-        <div class="salom d-flex flex-wrap " id="card__img"> </div>
-  
+        <div class="salom d-flex flex-wrap " id="card__img">
+          
+        </div>
+        
         <div class="btn-toolbar justify-content-center"  role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group mt-3"  role="group" aria-label="First group">
             <button type="button" class="btn btn-primary">1</button>
@@ -67,16 +69,50 @@
             <button type="button" class="btn btn-what">4</button>
           </div>
         </div>
-        
       </div>
-      
-      <script src="./js/movies.js"></script>
-      <script src="./js/bootstrap.js"></script>
-      <script src="./js/main.js"></script>
-      
-    </body>
-    </html>
+    </div>
     
+    <template id="card-moves"> 
+      <div class="card me-2 mb-3" style="width: 20rem;">
+        <img class="card-img-bottom card" src=""  id="moves-img" style="height: 220px;">
+        <h4 class="mt-4 ms-4 text-danger fw-bold flex-grow-1" id="moves-title"></h4>
+        <h5 class="mt-4 ms-4 d-blog  fw-bold" id="moves-year"></h5>
+        <h6 class="mt-4 ms-4  fw-bold" id="moves-reting"></h6>
+        <h6 class="fw-bold ms-4 mt-3 text-primary" id="moves-categors"></h6>
+        <div class="pt-4 pb-5 ">
+          <a class="btn btn-outline-primary p-1 ms-3 fs-6" href="" id="moves-youtobe">Watch trailer</a>
+          <button class="btn btn-outline-info btn-sm p-1 ms-2 fs-6">More info</button>
+          <button class="btn btn-outline-success btn-sm p-1 ms-2 fs-6" id="bookmark" >Bookmarks</button>
+        </div>
+      </div> 
+    </template>
     
+    <template id="card-button-template">
+      <li class="list-group-item p-3 border  bg-light" >
+        <p class="fw-bold" id="button-text">
+          <div class="card " style="width: 20rem; margin: 0 auto;" >
+            <img class="card-img-bottom card" src=""  id="moves-img" style="height: 220px;">
+            <h4 class="mt-4 ms-4 text-danger fw-bold flex-grow-1" id="moves-title"></h4>
+            <h5 class="mt-4 ms-4 d-blog  fw-bold" id="moves-year"></h5>
+            <h6 class="mt-4 ms-4  fw-bold" id="moves-reting"></h6>
+            <h6 class="fw-bold ms-4 mt-3 text-primary" id="moves-categors"></h6>
+            <div class="pt-4 pb-5 ">
+              <a class="btn btn-outline-primary p-1 ms-3 fs-6" href="" id="moves-youtobe">Watch trailer</a>
+              <button class="btn btn-outline-info btn-sm p-1 ms-2 fs-6">More info</button>
+              <button class="btn btn-outline-success btn-sm p-1 ms-2 fs-6" id="bookmark" >marks</button>
+            </div>
+          </div> 
+        </p>
+        <button type="button" class="btn btn-danger " id="button-danger">Danger</button>
+      </li>
+    </template>
+    <script src="./js/movies.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
     
-    
+  </body>
+  </html>
+  
+  
+  
+  
